@@ -10,7 +10,7 @@ url = "https://raw.githubusercontent.com/mamunalbd4/asharalo/main/asharalofinal.
 df = pd.read_csv(url)
 
 app = dash.Dash(__name__)
-
+server=app.server
 # Initialize layout
 app.layout = html.Div([
     dcc.Dropdown(
