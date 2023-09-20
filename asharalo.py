@@ -13,6 +13,7 @@ app = dash.Dash(__name__)
 server=app.server
 # Initialize layout
 app.layout = html.Div([
+    html.H1("Ashar Alo Project Baseline Survey (Summery)", style={'textAlign': 'center'}),  # Add the header
     dcc.Dropdown(
         id='district-dropdown',
         options=[{'label': district, 'value': district} for district in df['District'].unique()],
