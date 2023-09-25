@@ -25,6 +25,7 @@ categories = [
 
 # Initialize the Dash app
 app = dash.Dash(__name__)
+server=app.server
 
 # Define the layout of the Dash app with CSS styling for center alignment
 app.layout = html.Div([
