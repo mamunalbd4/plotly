@@ -11,6 +11,7 @@ df = pd.read_csv(url)
 
 # Initialize the Dash app
 app = dash.Dash(__name__)
+server=app.server
 
 # Create unique lists for District, Upazilla, Union, and Name of the village
 districts = df['District'].unique()
