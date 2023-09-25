@@ -12,6 +12,7 @@ df = df.dropna(subset=["Person's monthly income?"], how="any")
 
 # Create a Dash app
 app = dash.Dash(__name__)
+server=app.server
 
 # Define the layout of the app with center-aligned dropdown menus and CSS styling
 app.layout = html.Div([
