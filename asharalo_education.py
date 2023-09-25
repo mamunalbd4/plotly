@@ -11,6 +11,7 @@ data = pd.read_csv(url)
 
 # Create the Dash App
 app = dash.Dash(__name__)
+server=app.server
 
 # Define the available options for the dropdown
 gender_options = [{'label': 'All', 'value': 'All'}] + [{'label': gender, 'value': gender} for gender in data['Gender'].unique()]
